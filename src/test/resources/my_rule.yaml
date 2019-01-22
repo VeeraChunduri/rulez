@@ -1,0 +1,23 @@
+group: "a"
+conditions:
+  - operand: name
+    operations:
+      - operator: eq
+        values:
+          - akash
+  - operand: age
+    operations:
+      - operator: gt
+        values:
+          - 25
+---
+group: "b"
+conditions:
+  - operand: age
+    operations:
+      - operator: gt
+        values:
+          - 18
+      - operator: lt
+        values:
+          - 25
