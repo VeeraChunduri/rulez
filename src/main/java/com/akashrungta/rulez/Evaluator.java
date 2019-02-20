@@ -6,18 +6,19 @@ import com.akashrungta.rulez.applier.IntegerApplier;
 import com.akashrungta.rulez.applier.ObjectApplier;
 import com.akashrungta.rulez.models.Rule;
 import com.google.common.collect.Maps;
+import org.apache.commons.lang3.tuple.Pair;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
-import org.apache.commons.lang3.tuple.Pair;
 
 public class Evaluator {
 
 
   /*
     Evaluate all the rules for args
-    Returns TRUE if any of service rule is satisfied
+    Returns TRUE if any of rule is satisfied
      */
   public boolean evaluate(Object v, Collection<Rule> rules) {
     return rules
